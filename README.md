@@ -49,7 +49,8 @@ This compiles `src/theme.scss` to `theme.css`. Use `npm run build:watch` for aut
 ## Customization
 
 The theme includes variables at the top of the CSS file that can be adjusted to customize colors, fonts, and other elements.
-I may add support for Style Settings plugin in the future.
+
+**Style Settings** (optional): Install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin to access a "Disable folder colors" toggle in Settings → Appearance → Style Settings.
 
 ## Optional Fonts & Plugins
 ### Fonts
@@ -58,7 +59,8 @@ I may add support for Style Settings plugin in the future.
 - Interface font is just Obsidian default.
 
 ### Plugins
-**Iconize** for icons beside note folders: https://github.com/FlorianWoelki/obsidian-iconize
+- **Style Settings** for the "Disable folder colors" toggle: https://github.com/mgmeyers/obsidian-style-settings
+- **Iconize** for icons beside note folders: https://github.com/FlorianWoelki/obsidian-iconize
 
 ## Credits
 

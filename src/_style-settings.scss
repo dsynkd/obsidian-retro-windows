@@ -1,0 +1,23 @@
+/* @settings
+
+name: Retro Windows
+id: retro-windows
+settings:
+    -
+        id: retro-windows-disabled-folder-colors
+        title: Disable folder colors
+        description: Use a single color for all folders instead of the classic color-coded scheme
+        type: class-toggle
+
+*/
+
+/* When folder colors are disabled, use text color for folders */
+body.retro-windows-disabled-folder-colors {
+	.nav-files-container > div > .nav-folder {
+		--folder-color: var(--text-normal);
+	}
+
+	.nav-folder-title {
+		color: var(--text-normal);
+	}
+}

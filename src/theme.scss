@@ -3,6 +3,7 @@
  * Main entry point - imports all SCSS modules
  */
 
+@use 'style-settings';
 @use 'base';
 @use 'theme-light';
 @use 'theme-dark';
