@@ -13,7 +13,7 @@ A nostalgic Obsidian theme that brings back the classic look and feel of Windows
 - **Authentic Windows 3.1 Aesthetics**: Classic gray interface, 3D-effect buttons, blue title bars, and pixelated charm
 - **Dual Theme Support**: Choose between light and dark variants
 - **Color-Coded Folders**: Easily distinguish between different folders with the classic color scheme
-- **Classic Typography**: Uses "MS Sans Serif" and "Courier New" fonts for that authentic feel
+- **Classic Typography**: Uses "MS Sans Serif" for text/UI and "Fixedsys"/"Courier New" for code blocks
 - **Styled UI Elements**: Specially designed scrollbars, buttons, and windows that mimic the Windows 3.1 interface
 - **Markdown Formatting**: Custom styling for code blocks, headings, lists, and other markdown elements
 

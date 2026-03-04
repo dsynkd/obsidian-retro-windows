@@ -1,6 +1,9 @@
 /* Base variables and common elements */
 body {
-	/*--font-text-theme: "MS Sans Serif", Arial, sans-serif;*/
+	/* Retro Windows fonts - MS Sans Serif (Win 3.1/95), Fixedsys for code */
+	--font-text-theme: "MS Sans Serif", "W95font", "System", Tahoma, Arial, sans-serif;
+	--font-interface-theme: "MS Sans Serif", "W95font", "System", Tahoma, Arial, sans-serif;
+	--font-monospace-theme: "Fixedsys", "Courier New", Consolas, monospace;
 	--window-border: 2px solid #000;
 	
 	/* Header colors - shared across themes */
@@ -46,6 +49,40 @@ body {
 	/* Buttons */
 	--button-background: #d4d0c8;           /* Classic Win 3.1 folder color */
 	--button-text: #000000;                 /* Black text on buttons */
+	--button-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	--button-shadow-active: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+	--button-shadow-hover: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf;
+
+	/* Links */
+	--link-color: #0000ff;
+
+	/* Scrollbars, tabs, code, metadata, tables, folders */
+	--scrollbar-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	--scrollbar-shadow-active: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+	--tab-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	--tab-shadow-active: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+	--code-bg: #f0f0f0;
+	--code-color: #0b6e4f;
+	--code-border: #c0c0c0;
+	--inline-code-bg: #f0f0f0;
+	--metadata-border: #000000;
+	--metadata-bg: #d4d0c8;
+	--table-cell-bg: #ccccff1f;
+	--folder-border: #c0c0c0;
+
+	/* Folder colors */
+	--folder-color-1: #965D5D;
+	--folder-color-2: #8470A6;
+	--folder-color-3: #507A9E;
+	--folder-color-4: #5A8D76;
+	--folder-color-5: #A19C6C;
+	--folder-color-6: #A67A5B;
+	--folder-color-7: #96707E;
+	--folder-color-8: #5B8B9E;
+	--folder-color-9: #6B8C6B;
+	--folder-color-10: #8B7E6D;
+	--folder-color-11: #8D6B83;
+	--folder-color-12: #6C8299;
 }
 
 /* Dark theme variables */
@@ -77,14 +114,47 @@ body {
 	/* Buttons */
 	--button-background: #3a3a3a;           /* Dark version of Win 3.1 folder color */
 	--button-text: #e0e0e0;                 /* Light text on buttons */
-	
+	--button-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555;
+	--button-shadow-active: inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555;
+	--button-shadow-hover: inset -1px -1px #3a3a3a, inset 1px 1px #888888;
+
 	/* Dark theme specific overrides */
 	--bold-color: #7fc9a0; /* green */
 	--italic-color: #7fb0e0; /* blue */
 	--text-highlight-bg: #5a4820; /* yellow */
+
+	--link-color: #8cb4ff;
+
+	/* Scrollbars, tabs, code, metadata, tables, folders */
+	--scrollbar-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555;
+	--scrollbar-shadow-active: inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555;
+	--tab-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555;
+	--tab-shadow-active: inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555;
+	--code-bg: #2a2a2a;
+	--code-color: #6fcf9f;
+	--code-border: #555555;
+	--inline-code-bg: #2a2a2a;
+	--metadata-border: #666666;
+	--metadata-bg: #3a3a3a;
+	--table-cell-bg: #33335f;
+	--folder-border: #555555;
+
+	/* Folder colors - brightened for contrast */
+	--folder-color-1: #c78080;
+	--folder-color-2: #a992d0;
+	--folder-color-3: #7aa3c9;
+	--folder-color-4: #7fb59a;
+	--folder-color-5: #c9c48e;
+	--folder-color-6: #d19e7d;
+	--folder-color-7: #c093a6;
+	--folder-color-8: #7db3c9;
+	--folder-color-9: #8eb98e;
+	--folder-color-10: #b3a68f;
+	--folder-color-11: #b38da8;
+	--folder-color-12: #8eabc0;
 }
 
-/* Make windows look like Windows 3.1 windows - shared styling */
+/* Windows 3.1 style windows */
 .workspace-leaf {
 	border: var(--window-border);
 	box-shadow: var(--window-shadow);
@@ -98,139 +168,53 @@ body {
 	padding: 2px 4px;
 }
 
-/* Buttons with 3D effect - theme-specific styling */
+/* Buttons with 3D effect */
 button,
 .clickable-icon {
 	background-color: var(--button-background);
 	color: var(--button-text);
 	border: 1px solid #000;
 	padding: 2px 6px;
+	box-shadow: var(--button-shadow);
 }
 
-/* Light theme button styling */
-.theme-light button,
-.theme-light .clickable-icon {
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+button:active,
+.clickable-icon:active {
+	box-shadow: var(--button-shadow-active);
 }
 
-.theme-light button:active,
-.theme-light .clickable-icon:active {
-	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
-}
-
-/* Dark theme button styling */
-.theme-dark button,
-.theme-dark .clickable-icon {
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555;
-}
-
-.theme-dark button:active,
-.theme-dark .clickable-icon:active {
-	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555;
-}
-
-/* Ensure icons in buttons have good contrast - shared */
+/* Ensure icons in buttons have good contrast */
 button svg,
 .clickable-icon svg {
 	color: var(--button-text);
 }
 
-/* Improve contrast for hover states - shared */
-/*button:hover,
-.clickable-icon:hover {
-	background-color: var(--interactive-hover);
-	box-shadow: inset 1px 1px var(--window-shadow);
-}*/
-
-/* Hover States - Shared */
+/* Hover States */
 button:hover {
 	background-color: var(--interactive-hover);
+	box-shadow: var(--button-shadow-hover);
 }
-.cm-link:hover {
-	text-decoration: underline; /* For links */
-	color: var(--text-accent-hover); /* Optional: Add a hover color for links */
-}
-
-/* Light Theme Specific Hover */
-.theme-light button:hover {
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf;
-}
-
-/* Dark Theme Specific Hover */
-.theme-dark button:hover {
-	box-shadow: inset -1px -1px #3a3a3a, inset 1px 1px #888888;
+.external-link:hover {
+	text-decoration: underline;
+	color: var(--text-accent-hover);
 }
 
 
-/* Editor area styling - shared */
+/* Editor area */
 .cm-s-obsidian {
-	font-family: "Courier New", monospace;
+	font-family: var(--font-text-theme);
 	line-height: 1.5;
 	color: var(--text-normal);
 	background-color: var(--background-primary);
 }
 
-/* Headings - Shared (Reading and Editing Modes) */
+/* Headings */
 .cm-header, /* Editing Mode */
 h1, h2, h3, h4, h5, h6 { /* Reading Mode */
 	font-weight: bold;
 }
 
-/* Reading Mode Specific (HTML Headings) */
-h1 {
-	color: var(--h1-color);
-}
-h2 {
-	color: var(--h2-color);
-}
-h3 {
-	color: var(--h3-color);
-}
-h4 {
-	color: var(--h4-color);
-}
-h5 {
-	color: var(--h5-color);
-}
-h6 {
-	color: var(--h6-color);
-}
-
-/* Editing Mode Specific (CodeMirror Headings) */
-.cm-header-1 {
-	color: var(--h1-color);
-}
-.cm-header-2 {
-	color: var(--h2-color);
-}
-.cm-header-3 {
-	color: var(--h3-color);
-}
-.cm-header-4 {
-	color: var(--h4-color);
-}
-.cm-header-5 {
-	color: var(--h5-color);
-}
-.cm-header-6 {
-	color: var(--h6-color);
-}
-
-
-/* Links - theme specific */
-.theme-light .cm-link, 
-.theme-light .cm-hmd-internal-link {
-	color: #0000ff;
-	text-decoration: underline;
-}
-
-.theme-dark .cm-link, 
-.theme-dark .cm-hmd-internal-link {
-	color: #8cb4ff;
-	text-decoration: underline;
-}
-
-/* Dropdown menus - shared */
+/* Dropdown menus */
 .menu {
 	background-color: var(--background-tertiary);
 	border: var(--window-border);
@@ -247,7 +231,7 @@ h6 {
 	color: var(--titlebar-text);
 }
 
-/* Separator in menus - shared */
+/* Menu separator */
 .menu-separator {
 	border-bottom: 1px solid #808080;
 	margin: 4px 0;
@@ -282,7 +266,7 @@ h6 {
 	color: var(--text-normal);
 }
 
-/* Dialog buttons at bottom - shared */
+/* Dialog buttons */
 .modal-button-container {
 	display: flex;
 	justify-content: flex-end;
@@ -303,13 +287,13 @@ h6 {
 	padding: 0 4px;
 }
 
-/* Status bar buttons - shared */
+/* Status bar buttons */
 .status-bar-item button {
 	height: 18px;
 	padding: 0 4px;
 }
 
-/* Windows 3.1 style scrollbars - shared structure */
+/* Scrollbars */
 ::-webkit-scrollbar {
 	width: 16px;
 	height: 16px;
@@ -331,56 +315,34 @@ h6 {
 	height: 16px;
 }
 
-/* Theme-specific scrollbar styling */
-/* Light Scrollbars */
-
-
-
-.theme-light ::-webkit-scrollbar-thumb,
-.theme-light ::-webkit-scrollbar-button {
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+/* Scrollbar styling */
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-button {
+	box-shadow: var(--scrollbar-shadow);
 }
 
-.theme-light ::-webkit-scrollbar-button:active {
-	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+::-webkit-scrollbar-button:active {
+	box-shadow: var(--scrollbar-shadow-active);
 }
 
-.theme-dark ::-webkit-scrollbar-thumb,
-.theme-dark ::-webkit-scrollbar-button {
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555;
+.mod-root .workspace-tab-header-container-inner {
+	gap: var(--size-2-3);
+	margin-bottom: 4px;
+	margin-top: 5px;
 }
 
-.theme-dark ::-webkit-scrollbar-button:active {
-	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555;
-}
-
-/* Light Tabs styling */
-.theme-light .workspace-split .workspace-tab-header-container .workspace-tab-header {
+/* Tabs styling */
+.workspace-split .workspace-tab-header-container .workspace-tab-header {
 	background-color: var(--background-tertiary);
 	color: var(--text-normal);
 	border: 1px solid #000;
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
-	border-radius: 5px; /* Ensure all corners align */
-}
-
-.theme-light .workspace-split .workspace-tab-header-container .workspace-tab-header.is-active {
-	background-color: var(--background-secondary);
-	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+	box-shadow: var(--tab-shadow);
 	border-radius: 5px;
 }
 
-/* Dark Tabs styling */
-.theme-dark .workspace-split .workspace-tab-header-container .workspace-tab-header {
-	background-color: var(--background-tertiary);
-	color: var(--text-normal);
-	border: 1px solid #000;
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555;
-	border-radius: 5px;
-}
-
-.theme-dark .workspace-split .workspace-tab-header-container .workspace-tab-header.is-active {
+.workspace-split .workspace-tab-header-container .workspace-tab-header.is-active {
 	background-color: var(--background-secondary);
-	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555;
+	box-shadow: var(--tab-shadow-active);
 	border-radius: 5px;
 }
 
@@ -392,131 +354,39 @@ thanks u/AccomplishedLife7782 / https://github.com/Gonzalo-D-Sales */
 display: none;
 }
 
-/* Code blocks - theme specific */
-/*.theme-light pre,
-.theme-light code {
-	background-color: #f0f0f0;
-	color: #0b6e4f;
-	border: 1px solid #c0c0c0;
-	font-family: "Courier New", monospace;
-}
-
-.theme-light .cm-inline-code {
-	background-color: #f0f0f0;
-	color: #0b6e4f;
-	padding: 0 4px;
-	border-radius: 3px;
-}
-
-.theme-dark pre,
-.theme-dark code {
-	background-color: #2a2a2a;
-	color: #6fcf9f;
-	border: 1px solid #555555;
-	font-family: "Courier New", monospace;
-}
-
-.theme-dark .cm-inline-code {
-	background-color: #2a2a2a;
-	color: #6fcf9f;
-	padding: 0 4px;
-	border-radius: 3px;
-}*/
-
-/* Code blocks - theme specific */
-.theme-light pre,
-.theme-light code {
-	background-color: #f0f0f0;
-	color: #0b6e4f;
-	border: 1px solid #c0c0c0;
-	font-family: "Courier New", monospace;
+/* Code blocks */
+pre,
+code {
+	background-color: var(--code-bg);
+	color: var(--code-color);
+	border: 1px solid var(--code-border);
+	font-family: var(--font-monospace-theme);
 	border-radius: 5px;
 }
 
-.theme-light .cm-inline-code {
-	background-color: #f0f0f0;
-	color: #0b6e4f;
-	border-radius: 3px;
-}
-
-.theme-dark pre,
-.theme-dark code {
-	background-color: #2a2a2a;
-	color: #6fcf9f;
-	border: 1px solid #555555;
-	font-family: "Courier New", monospace;
-	border-radius: 5px;
-}
-
-.theme-dark .cm-inline-code {
-	background-color: #2a2a2a;
-	color: #6fcf9f;
+.cm-inline-code {
+	background-color: var(--inline-code-bg);
+	color: var(--code-color);
 	border-radius: 3px;
 }
 
 
-/* Properties mods - theme specific */
-.theme-light .metadata-container {
-	border: 1px solid #000000;
+/* Properties mods */
+.metadata-container {
+	border: 1px solid var(--metadata-border);
 	padding: 1em 1em 0.5em 2em;
 	border-radius: 5px;
-	background: #d4d0c8
+	background: var(--metadata-bg);
 }
 
-/* Properties mods for dark theme */
-.theme-dark .metadata-container {
-	border: 1px solid #666666;
-	padding: 1em 1em 0.5em 2em;
-	border-radius: 5px;
-	background: #3a3a3a;
-}
-
-/* Dataview column wrapping and coloring - theme specific */
-.theme-light .table-view-table>tbody>tr>td { 
+/* Dataview column wrapping and coloring */
+.table-view-table > tbody > tr > td {
 	white-space: pre-wrap !important;
-	background-color: #ccccff1f !important; 
+	background-color: var(--table-cell-bg) !important;
 	padding: 10px !important;
 }
 
-.theme-dark .table-view-table>tbody>tr>td { 
-	white-space: pre-wrap !important;
-	background-color: #33335f !important; 
-	padding: 10px !important;
-}
-
-/* Light theme folder colors */
-.theme-light {
-	--folder-color-1: #965D5D; /* red */
-	--folder-color-2: #8470A6; /* purple */
-	--folder-color-3: #507A9E; /* blue */
-	--folder-color-4: #5A8D76; /* green */
-	--folder-color-5: #A19C6C; /* yellow */
-	--folder-color-6: #A67A5B; /* orange */
-	--folder-color-7: #96707E; /* pink */
-	--folder-color-8: #5B8B9E; /* sky blue */
-	--folder-color-9: #6B8C6B; /* mint */
-	--folder-color-10: #8B7E6D; /* taupe */
-	--folder-color-11: #8D6B83; /* mauve */
-	--folder-color-12: #6C8299; /* steel blue */
-}
-
-/* Dark theme folder colors - brightened for better contrast */
-.theme-dark {
-	--folder-color-1: #c78080; /* red */
-	--folder-color-2: #a992d0; /* purple */
-	--folder-color-3: #7aa3c9; /* blue */
-	--folder-color-4: #7fb59a; /* green */
-	--folder-color-5: #c9c48e; /* yellow */
-	--folder-color-6: #d19e7d; /* orange */
-	--folder-color-7: #c093a6; /* pink */
-	--folder-color-8: #7db3c9; /* sky blue */
-	--folder-color-9: #8eb98e; /* mint */
-	--folder-color-10: #b3a68f; /* taupe */
-	--folder-color-11: #b38da8; /* mauve */
-	--folder-color-12: #8eabc0; /* steel blue */
-}
-
-/* Shared folder styling structure */
+/* Folder styling structure */
 .nav-files-container > div > .nav-folder:nth-child(6n + 1) { --folder-color: var(--folder-color-1); }
 .nav-files-container > div > .nav-folder:nth-child(6n + 2) { --folder-color: var(--folder-color-2); }
 .nav-files-container > div > .nav-folder:nth-child(6n + 3) { --folder-color: var(--folder-color-3); }
@@ -530,15 +400,9 @@ display: none;
 .nav-files-container > div > .nav-folder:nth-child(12n + 11) { --folder-color: var(--folder-color-11); }
 .nav-files-container > div > .nav-folder:nth-child(12n + 12) { --folder-color: var(--folder-color-12); }
 
-/* Theme-specific folder borders */
-.theme-light .nav-files-container > div > .nav-folder {
-	border: 1px solid #c0c0c0;
-	border-left: 4px solid var(--folder-color);
-	border-radius: var(--radius-s);
-}
-
-.theme-dark .nav-files-container > div > .nav-folder {
-	border: 1px solid #555555;
+/* Folder borders */
+.nav-files-container > div > .nav-folder {
+	border: 1px solid var(--folder-border);
 	border-left: 4px solid var(--folder-color);
 	border-radius: var(--radius-s);
 }
