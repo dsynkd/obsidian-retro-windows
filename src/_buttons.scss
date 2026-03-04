@@ -1,0 +1,31 @@
+/* Buttons with 3D effect */
+button,
+.clickable-icon {
+	background-color: var(--button-background);
+	color: var(--button-text);
+	border: 1px solid #000;
+	padding: 2px 6px;
+	box-shadow: var(--button-shadow);
+}
+
+button:active,
+.clickable-icon:active {
+	box-shadow: var(--button-shadow-active);
+}
+
+/* Ensure icons in buttons have good contrast */
+button svg,
+.clickable-icon svg {
+	color: var(--button-text);
+}
+
+/* Hover States */
+button:hover {
+	background-color: var(--interactive-hover);
+	box-shadow: var(--button-shadow-hover);
+}
+
+.external-link:hover {
+	text-decoration: underline;
+	color: var(--text-accent-hover);
+}

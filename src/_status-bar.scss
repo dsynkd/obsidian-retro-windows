@@ -1,0 +1,18 @@
+/* Status bar at the bottom - shared */
+.status-bar {
+	background-color: var(--background-tertiary);
+	border-top: 1px solid #808080;
+	color: var(--text-normal);
+	height: 22px;
+	padding: 0 4px;
+}
+
+.status-bar-item {
+	padding: 0 4px;
+}
+
+/* Status bar buttons */
+.status-bar-item button {
+	height: 18px;
+	padding: 0 4px;
+}

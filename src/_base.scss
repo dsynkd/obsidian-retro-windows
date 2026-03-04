@@ -1,0 +1,21 @@
+/* Base variables and common elements */
+body {
+	/* Retro Windows fonts - MS Sans Serif (Win 3.1/95), Fixedsys for code */
+	--font-text-theme: "MS Sans Serif", "W95font", "System", Tahoma, Arial, sans-serif;
+	--font-interface-theme: "MS Sans Serif", "W95font", "System", Tahoma, Arial, sans-serif;
+	--font-monospace-theme: "Fixedsys", "Courier New", Consolas, monospace;
+	--window-border: 2px solid #000;
+
+	/* Header colors - shared across themes */
+	--h1-color: #8470A6; /* purple */
+	--h2-color: #507A9E; /* blue */
+	--h3-color: #5A8D76; /* green */
+	--h4-color: #A67A5B; /* orange */
+	--h5-color: #A19C6C; /* yellow */
+	--h6-color: #6C8299; /* steel blue */
+
+	/* Formatting colors - shared but overridden per theme */
+	--bold-color: #61a181; /* green */
+	--italic-color: #95c2f0; /* blue */
+	--text-highlight-bg: #746119; /* yellow */
+}

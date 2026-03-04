@@ -1,0 +1,13 @@
+/* Editor area */
+.cm-s-obsidian {
+	font-family: var(--font-text-theme);
+	line-height: 1.5;
+	color: var(--text-normal);
+	background-color: var(--background-primary);
+}
+
+/* Headings */
+.cm-header, /* Editing Mode */
+h1, h2, h3, h4, h5, h6 { /* Reading Mode */
+	font-weight: bold;
+}

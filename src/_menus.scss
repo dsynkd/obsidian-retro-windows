@@ -1,0 +1,22 @@
+/* Dropdown menus */
+.menu {
+	background-color: var(--background-tertiary);
+	border: var(--window-border);
+	box-shadow: var(--window-shadow);
+}
+
+.menu-item {
+	color: var(--text-normal);
+	padding: 4px 8px;
+}
+
+.menu-item:hover {
+	background-color: var(--titlebar-background);
+	color: var(--titlebar-text);
+}
+
+/* Menu separator */
+.menu-separator {
+	border-bottom: 1px solid #808080;
+	margin: 4px 0;
+}

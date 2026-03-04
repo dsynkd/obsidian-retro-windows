@@ -1,0 +1,15 @@
+/* Code blocks */
+pre,
+code {
+	background-color: var(--code-bg);
+	color: var(--code-color);
+	border: 1px solid var(--code-border);
+	font-family: var(--font-monospace-theme);
+	border-radius: 5px;
+}
+
+.cm-inline-code {
+	background-color: var(--inline-code-bg);
+	color: var(--code-color);
+	border-radius: 3px;
+}

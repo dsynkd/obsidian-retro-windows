@@ -1,0 +1,13 @@
+/* Windows 3.1 style windows */
+.workspace-leaf {
+	border: var(--window-border);
+	box-shadow: var(--window-shadow);
+}
+
+.workspace-leaf-header {
+	background-color: var(--titlebar-background);
+	color: var(--titlebar-text);
+	font-weight: bold;
+	height: 20px;
+	padding: 2px 4px;
+}

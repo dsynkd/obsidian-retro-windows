@@ -1,0 +1,64 @@
+/* Light theme variables */
+.theme-light {
+	--window-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+
+	/* Background colors */
+	--background-primary: #ffffff;          /* Note background - off-white */
+	--background-secondary: #ececec;        /* Sidebar background - light gray */
+	--background-secondary-alt: #d4d0c8;    /* Classic Win 3.1 gray for panels */
+	--background-tertiary: #c0c0c0;         /* Classic Win 3.1 gray for UI elements */
+
+	/* Title bar */
+	/*--titlebar-background: #000080;         /* Classic Win 3.1 blue */
+	--titlebar-text: #ffffff;               /* White text on blue */
+
+	/* Text colors */
+	--text-normal: #000000;                 /* Black text for good contrast */
+	--text-muted: #333333;                  /* Dark gray for secondary text */
+	--text-faint: #666666;                  /* Medium gray for tertiary text */
+
+	/* Interactive elements */
+	--text-accent: #008015;                 /* Win 3.1 blue for accents */
+	--interactive-normal: #d4d0c8;          /* Folder/button background */
+	--interactive-hover: #e6e6e6;           /* Hover state */
+	--interactive-accent: #000080;          /* Selected state - Win 3.1 blue */
+	--interactive-accent-hover: #0000aa;    /* Hover on selected - darker blue */
+
+	/* Buttons */
+	--button-background: #d4d0c8;           /* Classic Win 3.1 folder color */
+	--button-text: #000000;                 /* Black text on buttons */
+	--button-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	--button-shadow-active: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+	--button-shadow-hover: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf;
+
+	/* Links */
+	--link-color: #0000ff;
+
+	/* Scrollbars, tabs, code, metadata, tables, folders */
+	--scrollbar-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	--scrollbar-shadow-active: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+	--tab-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	--tab-shadow-active: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+	--code-bg: #f0f0f0;
+	--code-color: #0b6e4f;
+	--code-border: #c0c0c0;
+	--inline-code-bg: #f0f0f0;
+	--metadata-border: #000000;
+	--metadata-bg: #d4d0c8;
+	--table-cell-bg: #ccccff1f;
+	--folder-border: #c0c0c0;
+
+	/* Folder colors */
+	--folder-color-1: #965D5D;
+	--folder-color-2: #8470A6;
+	--folder-color-3: #507A9E;
+	--folder-color-4: #5A8D76;
+	--folder-color-5: #A19C6C;
+	--folder-color-6: #A67A5B;
+	--folder-color-7: #96707E;
+	--folder-color-8: #5B8B9E;
+	--folder-color-9: #6B8C6B;
+	--folder-color-10: #8B7E6D;
+	--folder-color-11: #8D6B83;
+	--folder-color-12: #6C8299;
+}

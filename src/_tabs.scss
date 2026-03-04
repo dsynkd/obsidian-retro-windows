@@ -1,0 +1,28 @@
+.mod-root .workspace-tab-header-container-inner {
+	gap: var(--size-2-3);
+	margin-bottom: 4px;
+	margin-top: 5px;
+}
+
+/* Tabs styling */
+.workspace-split .workspace-tab-header-container .workspace-tab-header {
+	background-color: var(--background-tertiary);
+	color: var(--text-normal);
+	border: 1px solid #000;
+	box-shadow: var(--tab-shadow);
+	border-radius: 5px;
+}
+
+.workspace-split .workspace-tab-header-container .workspace-tab-header.is-active {
+	background-color: var(--background-secondary);
+	box-shadow: var(--tab-shadow-active);
+	border-radius: 5px;
+}
+
+/* fix bottom edge of active tabs https://github.com/codeisconfusing/retro-windows-obsidian/issues/1
+& https://www.reddit.com/r/ObsidianMD/comments/1j2ulat/comment/mfzfqrt/
+thanks u/AccomplishedLife7782 / https://github.com/Gonzalo-D-Sales */
+.workspace-split.mod-root .workspace-tab-header::before,
+.workspace-split.mod-root .workspace-tab-header::after {
+	display: none;
+}

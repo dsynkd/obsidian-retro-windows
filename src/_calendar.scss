@@ -1,0 +1,15 @@
+/* Calendar Styling */
+#calendar-container .day:hover {
+	background-color: var(--interactive-hover);
+}
+
+#calendar-container .today {
+	font-weight: 700;
+	background-color: var(--interactive-accent);
+	color: var(--titlebar-text);
+}
+
+.view-header .view-header-nav-buttons,
+.view-header .view-actions {
+	gap: var(--size-2-1);
+}

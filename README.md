@@ -24,6 +24,17 @@ A nostalgic Obsidian theme that brings back the classic look and feel of Windows
 3. Click "Manage" and search for "Retro Windows"
 4. Click "Install and use"
 
+## Development
+
+The theme is built from modular SCSS files. To compile:
+
+```bash
+npm install
+npm run build
+```
+
+This compiles `src/theme.scss` to `theme.css`. Use `npm run build:watch` for automatic recompilation during development.
+
 ## Manual Installation
 
 1. Download the `theme.css` file

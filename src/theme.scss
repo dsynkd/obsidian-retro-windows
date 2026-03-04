@@ -1,0 +1,21 @@
+/**
+ * Retro Windows - Obsidian Theme
+ * Main entry point - imports all SCSS modules
+ */
+
+@use 'base';
+@use 'theme-light';
+@use 'theme-dark';
+@use 'windows';
+@use 'buttons';
+@use 'editor';
+@use 'menus';
+@use 'modals';
+@use 'status-bar';
+@use 'scrollbars';
+@use 'tabs';
+@use 'code';
+@use 'metadata';
+@use 'tables';
+@use 'folders';
+@use 'calendar';

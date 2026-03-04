@@ -1,0 +1,12 @@
+{
+  "name": "obsidian-retro-windows",
+  "version": "1.2.3",
+  "description": "A nostalgic Obsidian theme that brings back the classic look and feel of Windows 3.1",
+  "scripts": {
+    "build": "sass src/theme.scss theme.css --no-source-map",
+    "build:watch": "sass src/theme.scss theme.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

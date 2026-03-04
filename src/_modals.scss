@@ -1,0 +1,36 @@
+/* Modal dialogs - shared */
+.is-phone .modal .modal-title {
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 70vw;
+}
+
+.modal {
+	background-color: var(--background-tertiary);
+	border: var(--window-border);
+	box-shadow: var(--window-shadow);
+}
+
+.modal-title {
+	color: var(--titlebar-text);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4px 8px;
+	font-weight: bold;
+}
+
+.modal-content {
+	padding: 8px;
+	color: var(--text-normal);
+}
+
+/* Dialog buttons */
+.modal-button-container {
+	display: flex;
+	justify-content: flex-end;
+	gap: 8px;
+	padding: 8px;
+}
