@@ -413,7 +413,6 @@ code {
 
 .nav-folder-title {
 	color: var(--folder-color);
-	font-weight: var(--font-bold);
 }
 
 /* TABLES */
